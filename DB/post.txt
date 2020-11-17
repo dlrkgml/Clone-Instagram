@@ -1,5 +1,0 @@
-insert into post (id) values ('조인태');
-insert into post (id) values ('권용');
-insert into post (id) values ('이가희');
-insert into post (id) values ('김효진');
-insert into post (id) values ('안덕우');
