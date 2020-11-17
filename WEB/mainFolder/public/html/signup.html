@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="shortcut icon" type="image⁄x-icon" href="../images/favicon2.jpg" sizes="192x192">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@600&family=Noto+Sans+KR:wght@100;900&family=Satisfy&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/default.css">
+  <style>
+    html {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: rgb(250, 250, 250);
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .signup-container {
+      display: inline;
+      margin: auto;
+    }
+
+    .signup-box {
+      background: white;
+      border: 0.5px solid #ddd;
+      width: 24rem;
+    }
+
+    .signup-head h1 {
+      font-family: 'Allura', cursive;
+      font-size: 3.3rem;
+      text-align: center;
+      margin: 1.5rem 0 2.4rem 0;
+    }
+
+    .signup-input {
+      background: rgb(250, 250, 250);
+      border: 0.5px solid #ddd;
+      height: 2.3rem;
+      width: 18.5rem;
+      border-radius: 0.15rem;
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+    }
+
+
+
+    .submit {
+      background: rgb(186, 216, 247);
+      border: 0;
+      border-radius: 0.3rem;
+      color: white;
+      font-weight: bold;
+      font-size: 1.03rem;
+      height: 2rem;
+      width: 19rem;
+      margin-top: 0.9rem;
+    }
+
+    .signup-input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .signup-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .signup-footer>p{
+      margin: 2rem 0;
+      width: 18.3rem;
+      text-align: center;
+      font-size:0.8rem;
+      color: #999;
+    }
+    .or {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0 2rem 0;
+    }
+
+    .or p {
+      color: #999;
+      font-size: 0.8rem;
+    }
+
+    .left-line {
+      height: 1px;
+      width: 7rem;
+      margin-right: 1rem;
+      background: #ddd;
+    }
+
+    .right-line {
+      height: 1px;
+      width: 7rem;
+      margin-left: 1rem;
+      background: #ddd;
+    }
+
+    .facebook-pwd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .facebook-pwd a {
+      color: rgb(29, 29, 90);
+      text-decoration: none;
+      margin-bottom: 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    #pwd {
+      color: rgb(15, 15, 46);
+      font-size: 0.8rem;
+    }
+
+    .facebook:before {
+      content: 'ƒ';
+      color: rgb(29, 29, 90);
+      margin-right: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .signup-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 0.5px solid #ddd;
+      width: 24rem;
+      height: 4rem;
+      margin-top: 1rem;
+    }
+
+    .signup-up p {
+      margin-right: 0.5rem;
+    }
+
+    .signup-up a {
+      color: dodgerblue;
+      text-decoration: none;
+    }
+
+    .signup-down {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 24rem;
+    }
+
+    .signup-down p {
+      margin: 1.7rem 0;
+      font-size: 0.95rem;
+    }
+
+    .app-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .appstore {
+      display: block;
+      width: 10rem;
+      height: 2.7rem;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .playstore {
+      display: block;
+      width: 10rem;
+      height: 2.7rem;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .toast-message{
+      position: fixed;
+      top: 5rem;
+      left: calc(50% - 6rem);
+      width: 12rem;
+      height: 2rem;
+      background-color: rgb(200,200,200);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      opacity: 0;
+      transition: 0.8s;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="signup-container">
+    <div class="signup-sign">
+      <section class="signup-box">
+        <div class="signup-head">
+          <h1>Instagram</h1>
+        </div>
+        <form class="signup-input-box" action="/signup_process" method="post">
+          <input required maxlength="16" minlength="8" type="text" name="id" class="signup-input" placeholder="전화번호, 사용자 아이디">
+          <input required maxlength="16" type="text" name="name" class="signup-input" placeholder="성명">
+          <input required maxlength="16" type="text" name="nickname" class="signup-input" placeholder="사용자 별명">
+          <input required maxlength="16" type="password" name="password" class="signup-input" placeholder="비밀번호">
+          <input type="submit" disabled class="submit" value="가입">
+        </form>
+        <div class="signup-footer">
+          <p>가입하면 Instagram의 약관, 데이터 정책 및 쿠키 정책에 동의합니다.</p>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="signup-up">
+          <p>계정이 있으신가요?</p>
+          <a href="/">로그인</a>
+        </div>
+        <div class="signup-down">
+          <p>앱을 다운로드하세요</p>
+          <div class="app-image">
+            <a href="#" style="background-image: url('../images/appstore.PNG');" class="appstore"></a>
+            <a href="#" style="background-image: url('../images/google.PNG');" class="playstore"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <div class='toast-message'>
+    <p>아이디가 중복되었습니다.</p>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/signupFront.js"></script>
+</body>
+
+</html>

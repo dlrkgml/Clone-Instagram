@@ -1,0 +1,8 @@
+<li class="follower-list">
+  <a href="#" class="follower_img"></a>
+  <div class="follower_info">
+    <a href="#" class="follower-nickname">닉네임</a>
+    <div class="follower-name">이름</div>
+  </div>
+  <div class="list-follow-button">follow-state</div>
+</li>

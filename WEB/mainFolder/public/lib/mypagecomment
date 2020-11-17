@@ -1,0 +1,7 @@
+<li class="right-feed-items">
+  <a href="" class="right-feed-image"></a>
+  <p class="right-feed-nickname">nickname</p>
+  <p class="right-feed-comment-date">날짜</p>
+  <p class="right-feed-comment">안녕하세요</p>
+  <p class="comment-delete-button">삭제</p>
+</li>

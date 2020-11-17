@@ -1,0 +1,460 @@
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+  width: 98vw;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  height: 54px;
+}
+.postList {
+  margin-top: 2rem;
+}
+.my-page-main {
+  position: absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  top:70px;
+  z-index: 10;
+}
+.my-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px solid #bbb;
+  height: 13rem;
+  max-width: 1000px;
+}
+
+.user1 .user2 {
+  margin-bottom: 20px;
+}
+.user1 {
+  margin: 0px 0px 20px;
+}
+.user2 {
+  margin: 0px 0px 20px;
+}
+.user-nickname {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0 1rem;
+}
+.user-secession {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 4px;
+  padding: 5px 9px;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 20;
+  cursor: pointer;
+}
+.user2 > a {
+  text-decoration: none;
+}
+.user2 > a:hover,
+.user2 > a:visited {
+  text-decoration: none;
+}
+.profile-section-image{
+  display: flex;
+  align-items: center;
+  padding-left: 6.3rem;
+  padding-bottom: 2rem;
+  width: 30%;
+  height: 100%;
+}
+.profile-section-infor{
+  display: flex;
+  padding-bottom: 2rem;
+
+  padding-left: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+}
+.profileImage {
+  flex-shrink: 0;
+  display:block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #d8cfcf;
+  border-radius: 50%;
+  margin-right: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.like-btn {
+  cursor: pointer;
+}
+
+/* -----------------------------------------------*/
+body{
+  width: 98vw;
+  height: 100vh;
+  background: #ddd;
+}
+.feed-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+}
+.feed-items{
+  margin: 0.55rem;
+  display: block;
+  width: 28%;
+  padding-bottom: 28%;
+  flex-shrink: 0;
+  z-index: 10;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.feed-post-modal-container{
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: 0.2s;
+}
+.feed-post-modal-box{
+  margin: auto;
+  width: 935px;
+  height: 600px;
+  background:white;
+  display: flex;
+}
+.feed-post-left-section{
+  position: relative;;
+  width: 64%;        }
+.feed-post-right-section{
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  justify-content: space-between;
+}
+.switch {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: rgba(100,100,100,0.5);
+  border-radius: 50%;
+  color: #eee;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.feed-slide-switch-left {
+  left: 1rem;
+  top: calc(50% - 15px);
+}
+.feed-slide-switch-right {
+  right: 1rem;
+  top: calc(50% - 15px);
+}
+.feed-slide-container{
+  height: 100%;
+  overflow: hidden;
+}
+.feed-slide-list{
+  position: relative;
+  display:flex;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.feed-slide-items{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-right: 1px solid #bbb;
+}
+.right-feed-header{
+  display:flex;
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+  height: 4rem;
+}
+.right-feed-image{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border:1px solid #aaa;
+  margin: 0.5rem;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.right-feed-items{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+.right-feed-nickname{
+  font-size: 0.8rem;
+}
+.right-feed-contents{
+  display: flex;
+  align-items: center;
+}
+.right-feed-contents p{
+  display: inline;
+  width: 70%;
+  margin: 1rem 0 0 1rem;
+}
+.right-feed-contents span {
+  position: relative;
+  right: 0;
+  margin: 1rem 0.5rem 0 auto;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.right-feed-comment{
+  display: block;
+  width: 80%;
+  font-size: 0.8rem;
+  padding: 0 1rem 0 3rem;
+}
+.right-feed-nickname {
+  font-weight: bold;
+
+}
+.right-feed-comment-date{
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: #bbb;
+}
+.right-feed-header{
+}
+.right-feed-center{
+  /* overflow-x: hidden; */
+  overflow-y: scroll;
+  height: 75%;
+}
+
+.right-feed-bottom{
+  display:flex;
+  flex-direction: column;
+  height: 15%;
+}
+.right-feed-bottom-comment{
+  position: relative;
+  bottom:0;
+  display:flex;
+  align-items: center;
+  height: 100%;
+}
+.right-feed-bottom-text {
+  position: relative;
+  bottom:0;
+  border:0;
+  border-top: 1px solid #bbb;
+  height: 94%;
+  width: 90%;
+}
+.right-feed-bottom-submit {
+  position: relative;
+  bottom:0;
+  height: 100%;
+  width: 10%;
+  color:dodgerblue;
+  border: 0;
+  border-top: 1px solid #bbb;
+}
+.right-feed-bottom-buttons{
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.comment-delete-button {
+  font-size: 0.8rem;
+  color: #bbb;
+  cursor: pointer;
+  display: none;
+}
+.mypage-post-count{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+.mypage-follow {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+.mypage-follower{
+  text-decoration: none;
+  margin: 0 1rem;
+  color: #333;
+}
+
+@media (max-width: 935px){
+  .feed-post-modal-box{
+      width: 80vw;
+      height: 80vw;
+  }
+  .feed-post-right-section {
+      display:none;
+  }
+  .feed-post-left-section{
+      width: 100%;
+  }
+}
+/* 게시글 삭제 모달 */
+.userModal-container {
+  z-index :20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:none;
+}
+.userModal-box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7rem;
+  /* justify-content: center; */
+}
+.userModal-menu {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 28rem;
+  height: 3.3rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-bottom: 0.5px solid #ddd;
+}
+.userModal-menu:nth-child(1) {
+  color: crimson;
+}
+.userModal-menu:nth-child(2){
+  border-bottom: 0;
+}
+@media (max-width: 800px) {
+  .userModal-menu{
+    width: 18rem;
+  }
+}
+
+/*팔로워 리스트*/
+.mypage-follower-modalcontainer {
+  z-index :20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:none;
+}
+.mypage-follower-list {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7rem;
+  /* justify-content: center; */
+}
+.follower-list {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 28rem;
+  height: 3.3rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-bottom: 0.5px solid #ddd;
+}
+.follower-list:nth-last-child(1){
+  border-bottom: 0;
+}
+.post-length {
+  font-weight: bold;
+}
+.follower-length{
+  font-weight: bold;
+}
+.follow-length{
+  font-weight: bold;
+}
+
+.follower_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 1rem;
+}
+.follower-nickname {
+  color: #666;
+  text-decoration: none;
+  font-weight: 400;
+}
+.follower-name {
+  color: #999;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.list-follow-button{
+  margin-left: auto;
+  margin-right: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 600px){
+  .profile-section-image{
+    display: none;
+  }
+  .profile-section-infor{
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+}
+.modal-button {
+  margin-left : auto;
+  margin-right: 1rem;
+}
