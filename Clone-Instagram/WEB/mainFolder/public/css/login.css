@@ -1,0 +1,194 @@
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  background: rgb(250, 250, 250);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+}
+.phone-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 440px;
+  height: 600px;
+
+}
+.login-sign {
+
+
+}
+.login-box{
+  background: white;
+  border: 0.5px solid #ddd;
+  width: 24rem;
+}
+.login-head h1{
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Satisfy', cursive; */
+  font-family: 'Allura', cursive;
+  font-size: 3.3rem;
+  text-align: center;
+  margin: 1.5rem 0 2.4rem 0;
+}
+.id {
+  background: rgb(250, 250, 250);
+  border: 0.5px solid #ddd;
+  height: 2.3rem;
+  width: 18.5rem;
+  border-radius: 0.15rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.password{
+  background: rgb(250, 250, 250);
+  border: 0.5px solid #ddd;
+  height: 2.3rem;
+  width: 18.5rem;
+  border-radius: 0.15rem;
+  font-size: 0.8rem;
+}
+.submit{
+  background: rgb(186, 216, 247);
+  border: 0;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.03rem;
+  height: 2rem;
+  width: 19rem;
+  margin-top: 0.9rem;
+}
+.login-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.or p {
+  color: #999;
+  font-size: 0.8rem;
+}
+.left-line {
+  height: 1px;
+  width: 7rem;
+  margin-right: 1rem;
+  background: #ddd;
+}
+.right-line {
+  height: 1px;
+  width: 7rem;
+  margin-left: 1rem;
+  background: #ddd;
+}
+.facebook-pwd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.facebook-pwd a {
+  color: rgb(29, 29, 90);
+  text-decoration: none;
+  margin-bottom: 1.3rem;
+  font-size: 0.95rem;
+}
+#pwd {
+  color: rgb(15, 15, 46);
+  font-size: 0.8rem;
+}
+.facebook:before {
+  content: 'ƒ';
+  color: rgb(29, 29, 90);
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.signup-up {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 0.5px solid #ddd;
+  width: 24rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+.signup-up p {
+  margin-right: 0.5rem;
+}
+.signup-up a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+.signup-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+}
+.signup-down p {
+  margin: 1.7rem 0;
+  font-size: 0.95rem;
+}
+.app-image {
+  display: flex;
+  justify-content: center;
+}
+.appstore {
+  display: block;
+  width: 10rem;
+  height: 2.7rem;
+  background-position:center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.playstore {
+  display: block;
+  width: 10rem;
+  height: 2.7rem;
+  background-position:center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer {
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer a {
+  color: rgb(13, 13, 65);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+.footer p {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #999;
+}
+.footer p:before {
+  content: '©';
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+@media (max-width: 800px) {
+  .phone-image {
+    display: none;
+  }
+}

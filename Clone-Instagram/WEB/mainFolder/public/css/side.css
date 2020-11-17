@@ -1,0 +1,143 @@
+.side {
+  width: 320px;
+  height: 100vh;
+  /*border: 1px solid #8e8e8e;*/
+}
+
+.side_user {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin: 18px 0px 10px 0px;
+}
+
+.side_user_info {
+  margin-left: 20px;
+}
+
+.side_user_info > a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;  
+}
+
+.side_user_info > div {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.side_img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.side_recommend {
+  margin-bottom: 10px;
+}
+
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0px 0px;
+  padding: 4px 12px;
+}
+
+.recommend > div {
+  color: #8e8e8e;
+  font-weight: bold;
+  font-size: 14px;
+}
+.recommend > a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.side_recommend_list {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.recommend_info {
+  width: 190px;
+  margin-left: 15px;
+}
+
+.recommend_info > a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;
+  
+}
+
+.recommend_info > div {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.recommend_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*팔로우 버튼*/
+button {
+  text-decoration: none;
+  border: 0;
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.link {
+  margin-bottom: 15px;
+  padding-left: 18px;
+}
+
+.link > a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 11px;
+}
+.side_link span {
+  color: #c7c7c7;
+  font-size: 11px;
+  padding-left: 18px;
+}
+
+.profile-image-label{
+  border: 1px solid #ccc;
+}
+@media(max-width: 600px) {
+  .side {
+    display: none;
+  }
+}
+
+.side-sticker {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  height: 215px;
+}
+.side-sticker::-webkit-scrollbar{ display:none; }
+
+.recommend_img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

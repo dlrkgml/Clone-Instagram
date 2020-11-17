@@ -1,0 +1,5 @@
+<li class="search-people-item">
+  <a href="#" class="search-people-image"></a>
+  <a href="#" class="search-people-name"></a>
+  <p class="isfollowed"></p>
+</li>

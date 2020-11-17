@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="shortcut icon" type="image⁄x-icon" href="../images/favicon2.jpg" sizes="192x192">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/default.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@600&family=Noto+Sans+KR:wght@100;900&family=Satisfy&display=swap"
+    rel="stylesheet">
+    <style>
+      @media (max-height: 600px){
+        .footer{
+          display: none;    
+        }
+      }
+    </style>
+  <body>
+    
+  <div class="container">
+    <section style="background-image: url('../images/login-phone.PNG');" class="phone-image"></section>
+    <div class="login-sign">
+      <section class="login-box">
+        <div class="login-head">
+          <h1>Instagram</h1>
+        </div>
+        <form class="login-input">
+          <input type="text" name="id" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
+          <input type="password" name="password" class="password" placeholder="비밀번호">
+          <input type="submit" class="submit" value="로그인">
+        </form>
+        <div class="login-footer">
+          <div class="or">
+            <div class="left-line"></div>
+            <p>또는</p>
+            <div class="right-line"></div>
+          </div>
+          <div class="facebook-pwd">
+            <a href="#" class="facebook">Facebook으로 로그인</a>
+            <a href="#" id="pwd">비밀번호를 잊으셨나요?</a>
+          </div>
+        </div>
+      </section>
+      <section class="signup">
+        <div class="signup-up">
+          <p>계정이 없으신가요?</p>
+          <a href="/signup">가입하기</a>
+        </div>
+        <div class="signup-down">
+          <p>앱을 다운로드하세요</p>
+          <div class="app-image">
+            <a href="#" style="background-image: url('../images/appstore.PNG');" class="appstore"></a>
+            <a href="#" style="background-image: url('../images/google.PNG');" class="playstore"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+  <footer class="footer">
+    <a href="" class="footer-link">소개</a>
+    <a href="" class="footer-link">도움말</a>
+    <a href="" class="footer-link">홍보센터</a>
+    <a href="" class="footer-link">API</a>
+    <a href="" class="footer-link">채용정보</a>
+    <a href="" class="footer-link">개인정보처리방침</a>
+    <a href="" class="footer-link">약관</a>
+    <a href="" class="footer-link">위치</a>
+    <a href="" class="footer-link">인기 계정</a>
+    <a href="" class="footer-link">해시태그</a>
+    <a href="" class="footer-link">언어</a>
+    <p>2020 CLONE INSTAGRAM FROM TEAM</p>
+  </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../js/loginFront.js"></script>
+  </body>
+  
+</html>
